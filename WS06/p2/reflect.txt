@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1)
+==> There are three types of iteration constructs (for, while, and do-while) in programming languages to give developers the flexibility to choose the best one based on the situation at hand. For example, the "for" loop is commonly used for iterating over arrays and collections where the length of the list is known or can be calculated in advance. On the other hand, the "while" loop is better suited when the number of iterations is not predetermined and depends on a particular condition being met. The "do-while" loop is best used when the loop must execute at least once. In this workshop, the "for" loop is used to iterate over the wish list items because the number of items is known in advance, and the loop counter (i) is incremented with each iteration until it reaches the total number of wish list items.
+    The "for" loop is more preferred when working with arrays because it can be used to iterate over each element in the array, and the loop counter can be used as an index to access the element directly. The "for" loop is also more concise and readable than the "while" or "do-while" loop in this case, as it clearly indicates that the loop will execute a specific number of times.
+
+2)
+==> For testing, I covered a variety of input cases, both expected and unexpected including testing edge cases, such as inputs that are at the minimum or maximum allowed values, as well as inputs that are outside the expected range or format.
+    For debugging, I try to find the type of problem. Syntactic errors, such as missing or incorrect punctuation, can often be found using a text editor that highlights syntax errors. Semantic errors, such as logic errors or incorrect data types, are more difficult to locate. My strategy for finding semantic errors is stepping through the program line by line using a debugger. Additionally, sometimes I take a break from the code and return to it with fresh eyes helps to identify problems that may have been missed previously.
+
+3)
+==> If I receive something like the error given in question when attempting to submit my work, I will run the code again and enter the correct input which is 0. Because this error only occurs when the input is wrong. So we don't need to fix anything in our code.  
