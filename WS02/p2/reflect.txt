@@ -1,0 +1,43 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+Email      : rsah@myseneca.ca
+Section    : ZRA
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1.
+ ==> The reason is that computer processing of data involves data conversion and various complex operations, such as the conversion of different units and bases (binary decimals). For example, "price1 = 17.96f" has bigger errors than the other three because it is possible that some division operations cannot be divided completely for this number(maybe no binary can totally represent this number), and it lost precision in the calculation. 
+
+
+2.
+ ==> The first example, divides the integer variable money by a floating-point literal 100.0, resulting in an implicit promotion of the money variable to a double. The result is then passed to the printf function as a double, and the %.2lf format specifier is used to print the value as a currency with two decimal places.
+
+     The second example also divides the integer variable money by a floating-point value, but in this case, the integer 100 is explicitly cast to a double using the (double) type cast operator before the division occurs. This explicit casting results in the same promotion of the money variable to a double as the first example.
+
+     The third example, printf("3. $%.2lf\n", (double)money / 100);, also divides the integer variable money by an integer value 100, but in this case, the money variable is explicitly cast to a double using the (double) type cast operator before the division occurs. This explicit casting results in the promotion of the money variable to a double, allowing the division to produce a floating-point result that is passed to the printf function as a double, and the %.2lf format specifier is used to print the value as a currency with two decimal places.
+     Hence, due to these reasons, the three examples are working as intended.
+
+3.
+==> a) The value of the variable result is $72 because the division operator performs integer division, meaning it will only return the whole number result of the division and discard any remainder. So, in this case, 7245 divided by 100 is 72 with a remainder of 45, and only the whole number (72) is assigned to the variable result.
+
+    b) The values are - 
+            1. $0.00
+            2. $72
+            3. $0.00
+            4. $72
+
+     c)In the first and third printf statements, the argument passed is a floating-point value (money / 100) which is then formatted to display 2 decimal places (%.2lf). However, in the second and fourth printf statements, the argument passed is an integer value (money / 100) which is being formatted to display as an integer ( %d ). Since the first and third statements are trying to display a floating-point value as if it were an integer, this is what causes them not to work as expected.
+
+
+
+
+
