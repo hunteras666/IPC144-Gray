@@ -1,0 +1,32 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1)
+==> Using variables and macros to represent information rather than hardcoding "magic" numbers (constant literals) provides several advantages, including:
+
+I) Improved readability and maintainability: Using variables and macros with meaningful names makes the code easier to read and understand. This is especially useful when working on larger projects with many lines of code, as it helps other developers (and even yourself in the future) understand the intent of the code. Additionally, if you need to change the value of a constant, you only need to modify it in one place instead of finding and replacing all instances of that value in the code.
+
+II) Enforcing constraints: By defining constants with specific values, we can ensure that certain constraints are met throughout the code. In this workshop, using macros for minimum and maximum years and defining the range of months allowed ensures that the user enters valid values. Without this, it would be possible for the user to input an invalid value, which could lead to errors or unexpected behavior.
+
+III) Modularity: By using macros and constants, we can easily reuse code in different parts of our program. For example, if we wanted to add another feature that required valid date input, we could use the same macro MIN_YEAR and MAX_YEAR to ensure the year input is within the valid range. This can save time and reduce the potential for errors when developing and modifying code.
+
+
+2)
+==> There are two main reasons why it is better designed to place the sum and average logic outside of the validation routine in the given code:
+
+I) Separation of Concerns: One reason is the separation of concerns, which is a key principle of software design. The purpose of the validation routine is to ensure that the user inputs are within a specific range. It is not responsible for calculating the sum or average of the ratings. By separating the validation logic from the sum and average logic, it Separates the validation logic from the sum and average logic modular and each module is responsible for a single task, making it easier to identify and isolate any issues.
+
+II) Efficiency: Another reason is efficiency. If the sum and average logic was included in the validation routine, it would have to be executed every time the user enters a new rating value. This would result in unnecessary calculations and would slow down the program. By keeping the sum and average logic outside of the validation routine, the calculations are only performed once all the ratings have been entered. This reduces the number of calculations and improves the performance of the program.
+
+In this workshop, the validation routine ensures that the ratings entered by the user are within the required range. The sum and average logic are placed outside of this routine, which makes the code easier to understand and maintain. The sum and average logic is only executed once all the ratings have been entered, which improves the performance of the program.
+
+
