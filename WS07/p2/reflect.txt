@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.
+==> No I wasn't successful in coding non-repetitive sections of the logic in the game play portion of this workshop(drwaing of the ruler, board, player position, etc) at first attempt, So I leave it and started doing the rest of the logics and when I was finished with every other logics, then I started doing this logics, I went through all the codes line by line. I did the whole walkthrough of the code by using pen and paper and then I was able to find the errors and got the idea to solve it.
+
+2.
+==> The use of structures has simplified the code by grouping related variables into a single user-defined data type, improving code organization and readability. In the given code, there are two structures defined: playerInfo and gameInfo. These structures summarize the information required for players and games, respectively.
+
+Before using structures, the code would have required many separate variables for the different aspects of the game and player information. With the use of structures, related variables are organized into the appropriate structure, making the code more efficient and easier to read. For example, instead of declaring separate variables for player information such as the number of lives, player character, treasure count, and position history, all of these variables are grouped into a single structure named playerInfo. Similarly, variables related to the game, such as the number of moves, path length, and locations of bombs and treasure, are grouped into a separate structure called gameInfo.
+
+
+
+3.
+==> The maximum number of levels of nesting in the program is 3. This is because the code contains three levels of nested loops, which are the two for-loops inside the main function and the two for-loops inside the do-while loops for configuring the game. Additionally, there are a few if statements inside these loops, but they do not add an extra level of nesting. For example, one of them is 
+do {
+    
+
+    if (player.lives < MINIMUM_LIVES || player.lives > MAXIMUM_LIVES)
+    {
+        
+    }
+}
+while (player.lives < MINIMUM_LIVES || player.lives > MAXIMUM_LIVES);
