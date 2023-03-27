@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1.
+==> One benefit of having helper functions designed to return values in two different ways (via an argument and/or by return) is that it provides flexibility to the user of the function. By allowing the user to choose whether to receive the value via a return statement or an argument, the function can be used in different ways depending on the needs of the user. For example, if a user wants to use the return value immediately in an expression, they can receive it via the return statement. On the other hand, if a user wants to use the value in multiple places or modify it before using it, they can choose to receive it via an argument.
+
+However, there are also potential drawbacks to this approach. One negative aspect is that it can lead to confusion or errors if the user of the function is not aware of how the function is designed to work. For example, if a user expects the function to always return a value but forgets to assign the return value to a variable, they may inadvertently discard the value. Similarly, if a user expects the function to modify an argument but forgets to pass the argument by reference, the function may not behave as expected. This can lead to subtle bugs that are difficult to diagnose and fix.
+
+Therefore, it is important for the function documentation to clearly explain how the function works and how the return value and argument are related so that the user can use the function correctly and avoid potential errors. Additionally, it may be helpful to avoid using this approach if there is no clear advantage to it to minimize the potential for confusion or errors.
+
+
+2.
+==> One function that demonstrates less than perfect cohesion is getCatFoodInfo(). This function is responsible for getting user input for several cat food product attributes (SKU, Price, Weight, and Calories). Although these attributes are related to cat food products, they are not necessarily closely related, and they can be split into separate functions with a single responsibility for each.
+
+One function that demonstrates coupling that could be improved is convertLbsG(). This function calls convertLbsKg(), which is a form of tight coupling. Instead, the function convertLbsG() should perform its own calculation for the conversion of pounds to grams, without relying on another function. To improve this, we can refactor the code in convertLbsKg() to a separate function and call it in both convertLbsG() and convertLbsKg().
+
+Here are the steps to improve these functions:
+
+1)For getCatFoodInfo(), we can break down the function into smaller functions, each of which will be responsible for getting input for a specific attribute. This will increase cohesion and make the code easier to understand and maintain.
+
+2)For convertLbsG(), we can extract the conversion calculation into a separate function, let's call it convertLbsToGrams(). We will then call this function in both convertLbsG() and convertLbsKg(). This will decrease the coupling between the two functions and make the code easier to test, understand and maintain.
+
+3.
+==>Passing structures to functions can have several advantages, such as:
+
+Code organization: Structures can help organize related data into a single entity, making the code more modular and easier to read and maintain.
+
+Encapsulation: Structures can help encapsulate data and functions related to that data, providing a clean interface for other parts of the program to interact with.
+
+Efficiency: Passing structures to functions can be more efficient than passing individual data elements, especially for large or complex data structures.
+
+To make the passing of data to functions more efficient, you can pass structures by reference instead of by value. This means that the function receives a pointer to the original structure in memory, rather than creating a new copy of the structure. This can help save memory and improve performance, especially for large structures.
+
+The “displayCatfoodData” function could be improved in several ways to make it more efficient:
+
+1)Pass the cat food data structure by reference instead of by value. This can help save memory and improve performance, especially for large structures.
+
+2)Use const pointers or references when appropriate to indicate that the function does not modify the data in the structure.
+
+3)Use inline functions for simple getter functions to reduce the overhead of function calls.
+
+4)Avoid unnecessary copies of data by using const references or pointers where possible.
+
