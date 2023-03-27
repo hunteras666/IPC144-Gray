@@ -1,0 +1,26 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Rajesh Sah
+Student ID#: 175281211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1)
+==> Code formatting is important because it helps to make code easier to read and understand. It also helps to reduce errors, improve maintainability and promote consistency. When making code, I like to start by breaking the problem down into smaller chunks and then writing the code for each chunk. This makes it easier to identify where problems may lie and makes the code easier to read. 
+I use a lot of ways to make the code easy to read and understand like commenting, consistent naming conventions, modularity, white space, and Indentation. For the iteration and selection logic parts of my code, I generally start by creating a loop that iterates over the data set. Then I use if/else statements to determine which element in the data set should be included or excluded. This helps to separate the logic from the data, making it easier for others to understand.
+
+
+2)
+==> If nesting were not possible, the code would have to be structured differently. For example, instead of using multiple nested loops to validate user input and keep asking for input until the input is valid, separate functions or variables would have to be used to accomplish the same task. This would likely result in a longer and more complex code. Additionally, the code logic would be harder to follow, as the nested structure provides a clear indication of the hierarchy of tasks and the flow of the program.
+
+
+3)
+==> Using a series of "if" optional path constructs in this scenario is inefficient because it requires testing each condition one by one, regardless of whether a previous condition has already been met. This means that the program will continue to evaluate subsequent conditions even if a previous condition has already been satisfied. This results in redundant and unnecessary processing, leading to slower performance and increased memory usage.
+
+In contrast, using "if/else if..." alternative path logic allows you to specify multiple conditions and execute the corresponding code for the first condition that evaluates to true, without testing the remaining conditions. This eliminates unnecessary processing and results in more efficient and optimized code.
