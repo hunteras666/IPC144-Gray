@@ -1,1 +1,1 @@
-# hunteras666-IPC144-Gray-
+# IPC144-Gray
